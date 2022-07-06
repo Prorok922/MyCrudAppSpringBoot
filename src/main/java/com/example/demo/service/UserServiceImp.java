@@ -20,6 +20,7 @@ public class UserServiceImp implements UserService {
     public List<User> getAllUsers() {
         return userDao.findAll();
     }
+
     @Override
     public User getUserById(long id) {
         return userDao.findById(id).orElse(null);
